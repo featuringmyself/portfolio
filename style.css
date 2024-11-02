@@ -577,6 +577,15 @@ a{
     .footer-heading {
         font-size: 1.2rem;
     }
+    .form-group{
+        max-width: 80vw;
+    }
+    #message{
+        width: 90vw;
+    }
+    #contactform{
+        margin-left: 2vw;
+    }
 }
 
 /* Responsive Padding Adjustments */
