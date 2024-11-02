@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#rightnav{
+    display: flex;
+    align-items: center;
+}
+#rightnav h3{
+    font-size: 1.5vw;
+    font-weight: 300;
+    margin-left: 2vw;
+    cursor: pointer;
+}
+.nav-elems{
+    background: linear-gradient(currentColor 0 0) 
+    bottom left/
+    var(--underline-width, 0%) 0.1em
+    no-repeat;
+    color: rgb(55, 100, 4);
+    display: inline-block;
+    padding: 0 .5em 0.2em;
+    text-decoration: none;
+    transition: background-size 0.5s;
+}
+.nav-elems:hover{
+    --underline-width: 100%;
+    color:  rgb(21, 37, 2);;
+}
+
+#leftnav{
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+#leftnav h1>span{
+    color: rgb(120, 196, 6);
+    font-size: 4vw;
+}
+#lefnav h1:hover{
+    font-size: 3vw;
+    cursor: pointer;
+}
+
+
+#page1{
+    margin-top: 6vw;
+    width: 100%;
+    height: 100%;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+}
+#pg1-left{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+#circular-text{
+    position: absolute;
+    bottom: 1vw;
+    left: 35%;
+    color: rgb(211, 206, 206);
+}
+#pg1-left img{
+    width: 25vw;
+    border-radius: 50%;
+}
+#pg1-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5vw;
+}
+#pg1-right p{
+    color: rgb(29, 28, 28);
+}
+#pg1-right h2{
+    color: rgb(0, 0, 0);
+    font-size: 3vw;
+    font-family: "Itim", cursive;
+    overflow: hidden;
+    border-right: .15em solid orangered;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 5s steps(40,end) infinite alternate,
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    90% { width: 100%; } /* Fully typed out */
+    100% { width: 100%; }
+}
+
+@keyframes blink-caret{
+    50% { border-color: transparent; }
+}
+
+
+#pg1-right h4{
+    color: rgb(64, 65, 60);
+    font-weight: 400;
+}
+
+#pg1-right button{
+    margin-top: 2vw;
+    font-size: 1vw;
+    color: gold;
+    background-color: black;
+    padding: 1vw;
+    border-radius: 2vw;
+}
+#pg1-right button:hover{
+    background-color: gold;
+    color: black;
+    transition: all ease-in-out 0.6s;
+    box-shadow: 0.5vw 0.5vw;
+} 
+#pg1-right-btn{
+    display: flex;
+    gap: 1vw;
+}
+
+
+#page2{
+    width: 100%;
+    height: 100%;
+    margin-top: 15vw;
+}
+.pg-top{
+    text-align: center;
+}
+.pg-top h5{
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+.pg-top h3{
+    font-size: 4vw;
+    font-size: 500;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    overflow: hidden;
+    animation: 
+        typing 3.5s steps(40,end) infinite alternate,
+        blink-caret .75s step-end infinite;
+}
+#pg2-bottom {
+    display: flex;
+    justify-content: space-around;
+    margin: 3vw;
+    align-items: center;
+}
+
+
+.profile-image { /* Responsive image */
+    height: 30vw; /* Maintain aspect ratio */
+    border-radius: 2vw; /* Optional: round the corners */
+}
+
+#pg2-bottom-right {
+    flex: 2; /* Allow the right container to take more space */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3vw;
+}
+
+.box {
+    border: 1px solid black; /* Light border for boxes */
+    text-align: center;
+    padding: 2vw; /* Padding inside the boxes */
+    margin-bottom: 20px; /* Space below each box */
+    border-radius: 2vw; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    cursor: pointer;
+}
+
+.box h3 {
+    margin: 0 0 10px; /* Space below the heading */
+}
+.box p{
+    color: rgb(83, 73, 73);
+}
+.box:hover{
+    color: white;
+    background-color: black;
+    transition: all ease-in-out 0.6s;
+}
+.description {
+    font-size: 1.3vw; /* Adjust font size */
+    text-align: center;
+    width: 60%;
+    color: rgb(85, 76, 76);
+}
+
+#pg2-bottom-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1vw;
+}
+#page3{
+    margin-top: 5vw;
+}
+#pg3-bottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5vw;
+}
+.pg3-box{
+    border: 1px solid black;
+    border-radius: 3vw;
+    padding: 4vw 8vw;
+}
+.pg3-bottom-list{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.pg3-box h4{
+    font-size: 2vw;
+    font-weight: 500;
+    color: #555555;
+}
+.pg3-box ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-top: 2vw;
+}
+.pg3-box ul li img{
+    height: 2vw;
+    width: auto;
+    margin-right: 0.2vw;
+}
+.pg3-box img{
+    width: 3vw;
+}
+
+#page4{
+    margin-top: 5vw;
+}
+.contactme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    padding: 2vw;
+    box-shadow: 0.5vw 0.5vw;
+}
+.contactme a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 25vw;
+    padding: 1vw;
+}
+.contactme img{
+    width: 2vw;
+    margin-right: 1vw;
+}
