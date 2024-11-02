@@ -38,7 +38,26 @@
             </div>
         </div>
         <div id="contactform">
-            <h3>Fill up the following form:</h3>
+            <div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
+                <h2 class="footer-heading">Free consultation</h2>
+                <form action="#" id="consultationForm" class="form-consultation" onsubmit="return validatePhoneNumber()">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group phone-group">
+                        <input type="text" id="countryCode" class="form-control country-code" value="+91" required>
+                        <input type="number" id="phone" class="form-control phone-number" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" cols="30" rows="3" class="form-control" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="form-control submit px-3">Send A Message</button>
+                    </div>
+                </form>
+                
+            </div>
+            
         </div>
         <div class="pg-top">
             <h5>Get in Touch</h5>

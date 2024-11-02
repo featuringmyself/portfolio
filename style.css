@@ -440,6 +440,157 @@ a{
 .services-whatsapp img{
     width: 20vw !important;
 }
+
+.col-md-3 {
+    width: 100%;
+    max-width: 400px; /* Limits the width for better readability */
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+.footer-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center; /* Center the heading text */
+}
+
+/* Form Styling */
+.form-consultation .form-group {
+    margin-bottom: 1rem;
+}
+
+.form-consultation .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #495057;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-consultation .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+    outline: none;
+}
+
+/* Button Styling */
+.form-consultation .submit {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.form-consultation .submit:hover {
+    background-color: #0056b3;
+}
+
+#contactform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10vw;
+}
+/* Flex layout for phone number and country code */
+.phone-group {
+    display: flex;
+    gap: 10px; /* Space between country code and phone number */
+}
+
+.country-code {
+    width: 15%; /* Adjust width as needed for the country code field */
+    max-width: 80px;
+    text-align: center;
+}
+
+.phone-number {
+    width: 75%; /* Remaining space for the phone number field */
+}
+
+/* Container Styling */
+.col-md-3 {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+.footer-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Form Styling */
+.form-consultation .form-group {
+    margin-bottom: 1rem;
+}
+
+.form-consultation .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #495057;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-consultation .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+    outline: none;
+}
+
+/* Button Styling */
+.form-consultation .submit {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.form-consultation .submit:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .phone-group {
+        flex-direction: column;
+    }
+    .footer-heading {
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsive Padding Adjustments */
+@media (max-width: 768px) {
+    .col-md-3 {
+        padding: 15px;
+    }
+    .footer-heading {
+        font-size: 1.2rem;
+    }
+}
 @media screen and (max-width: 600px) {
     #rightnav h3{
         font-size: 2.5vw;
