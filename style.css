@@ -305,8 +305,141 @@ a{
     width: 2vw;
     margin-right: 1vw;
 }
+.active{
+    text-decoration: underline;
+}
+#head{
+    background-image: url('images/about-head.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+#head h1{
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 2;
+}
+#head h1 span{
+    color: rgb(255, 217, 0);
+}
+#head img{
+    z-index: 2;
+    bottom: 1vw;
+    position: absolute;
+}
+.overlay {
+    position: absolute; /* Position overlay absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.767); /* Black with 50% opacity */
+    z-index: 1; /* Make sure overlay is above the background */
+}
+
+#about-body{
+    margin: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#about-body h1{
+    font-size: 8vw;
+}
+#about-body h4{
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+#about-body p{
+    font-size: 2vw;
+    margin: 2vw;
+}
+#about-body li{
+    font-size: 1.5vw;
+    margin: 3vw;
+}
+
+#services-body{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10vw;
+}
+#service-left h1{
+    font-size: 2.5vw;
+}
+#service-left h4{
+    font-size: 1vw;
+    font-weight: 400;
+}
+#service-left h5{
+    font-size: 1.5vw;
+    margin: 4vw;
+    color: rgb(9, 80, 9);
+}
+#service-left li{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 1vw;
+    font-size: 1.5vw;
+
+}
+#service-left img{
+    width: 2vw;
+}
 
 
+
+
+#service-middle h1{
+    font-size: 2.5vw;
+}
+#service-middle h4{
+    font-size: 1vw;
+    font-weight: 400;
+}
+#service-middle h5{
+    font-size: 1.5vw;
+    margin: 2vw;
+    color: rgb(9, 80, 9);
+}
+#service-middle li{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 1vw;
+    font-size: 1.5vw;
+
+}
+#service-middle img{
+    width: 2vw;
+}
+#service-right h1{
+    font-size: 2.5vw;
+}
+#service-right h5{
+    font-size: 1.5vw;
+    margin: 2vw;
+    color: rgb(9, 80, 9);
+}
+.services-whatsapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services-whatsapp img{
+    width: 20vw !important;
+}
 @media screen and (max-width: 600px) {
     #rightnav h3{
         font-size: 2.5vw;
@@ -354,7 +487,7 @@ a{
         font-size: 3vw;
         margin-top: 4vw;
         padding: 2vw;
-        margin: 5vw;
+        margin: 5vw 2vw;
     }
     .pg-top h5{
         font-size: 3vw;
@@ -401,5 +534,75 @@ a{
     }
     .contactme img{
         width: 4vw;
+    }
+    #services-body{
+        flex-direction: column;
+    }
+    #service-left{
+        margin: 10vw;
+    }
+    #service-left h1{
+        font-size: 8vw;
+    }
+    #service-left h4{
+        font-size: 3vw;
+    }
+    #service-left h5{
+        font-size: 5vw;
+    }
+    #service-left li{
+        justify-content: center;
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+    #service-left img{
+        width: 5vw;
+    }
+    .services-whatsapp{
+        margin: 10vw;
+    }
+    .services-whatsapp img{
+        width: 40vw !important;
+    }
+    
+    #service-middle{
+        margin: 10vw;
+    }
+    #service-middle h1{
+        font-size: 8vw;
+    }
+    #service-middle h4{
+        font-size: 3vw;
+    }
+    #service-middle h5{
+        font-size: 5vw;
+    }
+    #service-middle li{
+        justify-content: center;
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+    #service-middle img{
+        width: 5vw;
+    }
+    #service-right{
+        margin: 10vw;
+    }
+    #service-right h1{
+        font-size: 6vw;
+    }
+    
+    #service-right h4{
+        font-size: 3vw;
+    }
+    #service-right h5{
+        font-size: 4vw;
+    }
+    #head img{
+        bottom: 5vw;
+        height: 10vw;
+    }
+    #head{
+        height: 30vh;
     }
 }
