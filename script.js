@@ -38,9 +38,9 @@ function sendToTelegram() {
     .then(response => response.json())
     .then(data => {
         if (data.ok) {
-            alert("Message sent to Telegram!");
+            alert("Message sent!");
         } else {
-            alert("Failed to send message to Telegram.");
+            alert("Failed to send message.");
         }
     })
     .catch(error => console.error('Error:', error));
