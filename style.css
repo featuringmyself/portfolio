@@ -56,7 +56,7 @@ a{
     color: rgb(120, 196, 6);
     font-size: 4vw;
 }
-#lefnav h1:hover{
+#leftnav h1:hover{
     font-size: 3vw;
     cursor: pointer;
 }
@@ -73,19 +73,30 @@ a{
 #pg1-left{
     display: flex;
     align-items: center;
-    align-items: center;
+    justify-content: center;
     cursor: pointer;
     position: relative;
 }
 #circular-text{
     position: absolute;
-    bottom: 1vw;
-    left: 35%;
-    color: rgb(211, 206, 206);
+    display: flex;
+    background-color: white;
+    border-radius: 2vw;
+    color: rgb(35, 255, 6);
+    bottom: 0;
+    padding: 0.3vw 1vw;
+    align-items: center;
+    font-size: 1.3vw;
+}
+#circular-text img{
+    height: 2vw !important; 
+    width: auto;
 }
 #pg1-left img{
-    width: 25vw;
+    height: 25vw;
+    width: auto;
     border-radius: 50%;
+    cursor: pointer;
 }
 #pg1-right{
     display: flex;
@@ -202,7 +213,7 @@ a{
 }
 
 .box h3 {
-    margin: 0 0 10px; /* Space below the heading */
+    margin: 0 0 4vw; /* Space below the heading */
 }
 .box p{
     color: rgb(83, 73, 73);
@@ -293,4 +304,102 @@ a{
 .contactme img{
     width: 2vw;
     margin-right: 1vw;
+}
+
+
+@media screen and (max-width: 600px) {
+    #rightnav h3{
+        font-size: 2.5vw;
+    }
+    #leftnav{
+        font-size: 2.5vw;
+    }
+    #leftnav h1>span{
+        font-size: 4vw;
+    }
+    #page1{
+        flex-direction: column;
+        margin-top: 10vw;
+    }
+    #circular-text{
+        font-size: 3vw;
+        color: rgb(35, 255, 6);
+        padding: 1vw;
+    }
+    #circular-text img{
+        height: 4vw !important; 
+        width: auto;
+    }
+    #pg1-left{
+        margin-bottom: 5vw;
+    }
+    #pg1-left img{
+        height: 60vw;
+        width: auto;
+    }
+    #pg1-right{
+        margin-left: 0;
+    }
+    #pg1-right h2{
+        font-size: 7vw;
+        margin: 2vw 0;
+    }
+    #pg1-right h4{
+        font-size: 2vw;
+    }
+    #pg1-right p{
+        font-size: 4vw;
+    }
+    #pg1-right button{
+        font-size: 3vw;
+        margin-top: 4vw;
+        padding: 2vw;
+        margin: 5vw;
+    }
+    .pg-top h5{
+        font-size: 3vw;
+    }
+    .pg-top h3{
+        font-size: 8vw;
+    }
+    .box h3{
+        font-size: 3vw;
+    }
+    .box p{
+        font-size: 2.5vw;
+    }
+    .description{
+        font-size: 3vw;
+        margin-bottom: 8vw;
+    }
+    #pg2-bottom{
+        flex-direction: column;
+    }
+    #pg2-bottom-left img{
+        height: 50vw;
+        margin: 4vw;
+    }
+    #pg3-bottom{
+        flex-direction: column;
+        gap: 4vw;
+    }
+    .pg3-box h4{
+        font-size: 4vw;
+    }
+    .pg3-box ul li{
+        font-size: 3vw;
+    }
+    .pg3-box ul li img{
+        height: 3vw;
+    }
+    .contactme{
+        flex-direction: column;
+    }
+    .contactme a{
+        font-size: 3vw;
+        padding: 3vw;
+    }
+    .contactme img{
+        width: 4vw;
+    }
 }
