@@ -574,9 +574,6 @@ a{
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .phone-group {
-        flex-direction: column;
-    }
     .footer-heading {
         font-size: 1.2rem;
     }
