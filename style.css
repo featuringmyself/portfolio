@@ -240,6 +240,21 @@ a{
 #page3{
     margin-top: 5vw;
 }
+#pg3-middle{
+    margin: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#pg3-middle h3{
+    font-weight: 400;
+    font-size: 2vw;
+}
+#pg3-middle img{
+    width: 50vw;
+    border-radius: 2vw;
+}
 #pg3-bottom{
     display: flex;
     width: 100%;
@@ -761,5 +776,14 @@ a{
     }
     #head{
         height: 30vh;
+    }
+    #pg3-middle{
+        margin-bottom: 20vw;
+    }
+    #pg3-middle img{
+        width: 90vw;
+    }
+    #pg3-middle h3{
+        font-size: 5vw;
     }
 }
