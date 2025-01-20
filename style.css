@@ -8,7 +8,32 @@
 html,body{
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    /* width: 65vw;
+    height: 30vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 nav{
     display: flex;
@@ -178,9 +203,9 @@ a{
     margin: 0 auto;
     letter-spacing: .15em;
     overflow: hidden;
-    animation: 
+    /* animation: 
         typing 3.5s steps(40,end) infinite alternate,
-        blink-caret .75s step-end infinite;
+        blink-caret .75s step-end infinite; */
 }
 #pg2-bottom {
     display: flex;

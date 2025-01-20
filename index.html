@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-90ZT2G4223"></script>
@@ -64,7 +66,7 @@
                     <div id="pg2-bottom-right">
                         <div class="box">
                             <h3>Education</h3>
-                            <p style="color: rgb(173, 172, 172);">Preparing for</p>
+                            <p style="color: rgb(173, 172, 172);">Persuing</p>
                             <p>B. TECH <br> in Computer Science</p>
                         </div>
                         <div class="box">
@@ -73,9 +75,7 @@
                         </div>
                     </div>
                     <p class="description">
-                        I'm a web developer skilled in Django, Python, HTML, CSS, JavaScript, and SQL. I specialize in
-                        building responsive, user-friendly web apps, with experience in Tailwind CSS, Bootstrap, and
-                        React Native, which has high conversion ratio and hence, drives the business to success
+                        I'm a web developer and app developer skilled in React, Node.js, Django, Python, HTML, CSS, JavaScript, and SQL. I specialize in building responsive, user-friendly web and mobile apps, with experience in Tailwind CSS, Bootstrap, and React Native, delivering solutions that drive high conversion rates and business success.
                     </p>
                 </div>
             </div>
@@ -88,8 +88,39 @@
                 <h3>Experience</h3>
             </div>
             <div id="pg3-middle">
-                <h3>We are currently working on!</h3>
-                <img src="images/cocacolawork.png" alt="">
+                <h3>Click to view them live!</h3>
+            
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://ochi.vercel.app/" target="_blank">
+                                <img src="images/ochi.png" alt="Ochi">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://primeexpo.netlify.app">
+                                <img src="images/primeexpo.png" alt="PrimeExpo">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="underDevelopment.html">
+                                <img src="images/cocacolawork.png" alt="CocaCola Work">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://worksstudio.netlify.app/">
+                                <img src="images/worksstudio.png" alt="work studio Work">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://lazarev-black.vercel.app/">
+                                <img src="images/lazarev.png" alt="lazarev Work">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
             </div>
             <div id="pg3-bottom">
                 <div class="pg3-box">
@@ -103,7 +134,7 @@
                         <ul type="none">
                             <li><img src="images/typescript.png" alt="">TypeScript</li>
                             <li><img src="images/materialui.jpg" alt="">Material UI</li>
-                            <li><img src="images/sass.png" alt="">SASS</li>
+                            <li><img src="images/react.png" alt="">React</li>
                         </ul>
                     </div>
                 </div>
@@ -112,7 +143,7 @@
                     <div class="pg3-bottom-list">
                         <ul type="none">
                             <li><img src="images/djanog.png" alt="">Django</li>
-                            <li><img src="images/nodejs.png" alt="">Nodejs</li>
+                            <li><img src="images/nodejs.png" alt="">Node JS</li>
                             <li><img src="images/sql.png" alt="">SQL</li>
                         </ul>
                         <ul type="none">
@@ -137,6 +168,24 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 10,
+                stretch: 10,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+        });
+    </script>
+
 </body>
 
 </html>
