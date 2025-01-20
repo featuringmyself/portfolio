@@ -467,6 +467,17 @@ a{
 #service-right h1{
     font-size: 2.5vw;
 }
+#service-right img{
+    width: 2vw;
+}
+#service-right li{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 1vw;
+    font-size: 1.5vw;
+
+}
 #service-right h5{
     font-size: 1.5vw;
     margin: 2vw;
